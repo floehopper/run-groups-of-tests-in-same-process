@@ -1,5 +1,9 @@
 ## Run groups of tests in same process
 
+While I'm happy with the idea of tests running in a random order, I still want to be able to run groups of tests separately i.e. in the examples below, I want to run all the `FastFeedbackTest` tests **before** any of the `SlowFeedbackTest` tests.
+
+The code in [`run_groups_of_tests_in_same_process.rb`](https://github.com/floehopper/run-groups-of-tests-in-same-process/blob/master/run_groups_of_tests_in_same_process.rb) is the best I've come up with so far, but I'm not very happy with it. This is the output:-
+
     $ ruby run_groups_of_tests_in_same_process.rb -v
     Run options: -v --seed 57790
     
